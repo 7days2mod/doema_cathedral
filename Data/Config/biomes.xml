@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worldgeneration>
+  <weather>
+    <property class="Foggy">
+      <property name="Spectrum" value="foggy"/>
+      <property name="Temperature" value="-5"/>
+      <property name="AmbientSound" value="..."/>
+      <property name="ParticleEffect" value="..."/>
+    </property>
+    <property class="Rainy">
+      <property name="Spectrum" value="rainy"/>
+      <property name="Temperature" value="-10"/>
+      <property name="AmbientSound" value="..."/>
+      <property name="ParticleEffect" value="..."/>
+    </property>
+  </weather>
+  <biomes>
+    <biomemap name="snow" id="1"/>
+    <biomemap name="forest" id="2"/>
+    <biomemap name="pine_forest" id="3"/>
+    <biomemap name="plains" id="4"/>
+    <biomemap name="desert" id="5"/>
+    <biomemap name="water" id="6"/>
+    <biomemap name="radiated" id="7"/>
+    <biomemap name="wasteland" id="8"/>
+    <biomemap name="burnt_forest" id="9"/>
+    <biomemap name="city" id="10"/>
+    <biomemap name="city_wasteland" id="11"/>
+    <biomemap name="wasteland_hub" id="12"/>
+    <biomemap name="caveFloor" id="13"/>
+    <biomemap name="caveCeiling" id="14"/>
+    <biome name="snow" biomemapcolor="#FFFFFF">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="forest" biomemapcolor="#008D00">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="pine_forest" biomemapcolor="#004000">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="plains" biomemapcolor="#00FF00">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="desert" biomemapcolor="#FFE477">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="water" biomemapcolor="#0063ff">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Water">
+        <property name="BaseHeight" value="5"/>
+      </terrain>      
+    </biome>
+    <biome name="radiated" biomemapcolor="#FF0000" radiationlevel="0">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="radiated"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="wasteland" biomemapcolor="#ffa800">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="burnt_forest" biomemapcolor="#ba00ff">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="city" biomemapcolor="#808080">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="city_wasteland" biomemapcolor="#c0c0c0">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="wasteland_hub" biomemapcolor="#a0a0a0">
+      <weather>
+        <Temperature min="0" max="0" prob="1"/>
+        <Fog min="0" max="0" prob="1"/>
+        <CloudThickness min="0" max="0" prob="1"/>
+        <Precipitation min="0" max="0" prob="1"/>
+        <Wind min="0" max="0" prob="1"/>
+      </weather>
+      <layers>
+        <layer filluptorg="1" blockname="water"/>
+        <layer depth="1" blockname="stone"/>
+        <layer depth="*" blockname="stone"/>
+        <layer depth="3" blockname="bedrock"/>
+      </layers>
+      <spectrum name="forest"/>
+      <decorations>
+      </decorations>
+      <terrain class="Forest"/>
+    </biome>
+    <biome name="caveFloor" biomemapcolor="#a1a1a1">
+      <decorations>
+      </decorations>
+    </biome>
+    <biome name="caveCeiling" biomemapcolor="#a2a2a2">
+      <decorations>
+      </decorations>
+    </biome>
+  </biomes>
+  <pois>
+    <poi name="City Asphalt " poimapcolor="#3d3f47" blockname="stone">
+      <decal texture="0" face="0" prob="0"/>
+      <decal texture="1" face="0" prob="0"/>
+      <decal texture="2" face="0" prob="0"/>
+      <decal texture="3" face="0" prob="0"/>
+      <decal texture="4" face="0" prob="0"/>
+      <decal texture="5" face="0" prob="0"/>
+      <decal texture="6" face="0" prob="0"/>
+      <decal texture="7" face="0" prob="0"/>
+      <decal texture="8" face="0" prob="0"/>
+      <decal texture="9" face="0" prob="0"/>
+      <decal texture="10" face="0" prob="0"/>
+      <decal texture="11" face="0" prob="0"/>
+      <decal texture="12" face="0" prob="0"/>
+      <decal texture="13" face="0" prob="0"/>
+      <decal texture="14" face="0" prob="0"/>
+      <decal texture="15" face="0" prob="0"/>
+    </poi>
+    <poi name="Country Road Asphalt" poimapcolor="#272f48" blockname="stone">
+      <decal texture="0" face="0" prob="0"/>
+      <decal texture="1" face="0" prob="0"/>
+      <decal texture="2" face="0" prob="0"/>
+      <decal texture="3" face="0" prob="0"/>
+      <decal texture="4" face="0" prob="0"/>
+      <decal texture="5" face="0" prob="0"/>
+      <decal texture="6" face="0" prob="0"/>
+      <decal texture="7" face="0" prob="0"/>
+      <decal texture="8" face="0" prob="0"/>
+      <decal texture="9" face="0" prob="0"/>
+      <decal texture="10" face="0" prob="0"/>
+      <decal texture="11" face="0" prob="0"/>
+      <decal texture="12" face="0" prob="0"/>
+      <decal texture="13" face="0" prob="0"/>
+      <decal texture="14" face="0" prob="0"/>
+      <decal texture="15" face="0" prob="0"/>
+    </poi>
+    <poi name="Road Gravel" poimapcolor="#806f52" blockname="stone">
+      <decal texture="0" face="0" prob="0"/>
+      <decal texture="1" face="0" prob="0"/>
+      <decal texture="2" face="0" prob="0"/>
+      <decal texture="3" face="0" prob="0"/>
+      <decal texture="4" face="0" prob="0"/>
+      <decal texture="5" face="0" prob="0"/>
+      <decal texture="6" face="0" prob="0"/>
+      <decal texture="7" face="0" prob="0"/>
+      <decal texture="8" face="0" prob="0"/>
+      <decal texture="9" face="0" prob="0"/>
+      <decal texture="10" face="0" prob="0"/>
+      <decal texture="11" face="0" prob="0"/>
+      <decal texture="12" face="0" prob="0"/>
+      <decal texture="13" face="0" prob="0"/>
+      <decal texture="14" face="0" prob="0"/>
+      <decal texture="15" face="0" prob="0"/>
+    </poi>
+    <poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58"/>
+    <poi name="WaterDesert" poimapcolor="#002868" blockname="water" blockbelow="sand" yposfill="44"/>
+    <poi name="WaterHills" poimapcolor="#5d9bfd" blockname="water" blockbelow="sand" yposfill="73"/>
+    <poi name="WaterMountains" poimapcolor="#a3c7fe" blockname="water" blockbelow="sand" yposfill="78"/>
+    <poi name="Sand" poimapcolor="#c6b9a2" blockname="sand"/>
+    <poi name="Empty" poimapcolor="#f6ff00"/>
+  </pois>
+</worldgeneration>
